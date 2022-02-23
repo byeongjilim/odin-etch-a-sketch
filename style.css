@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+main {
+    width: 720px;
+    height: 720px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.etch-pixel-row {
+    height: 45px;
+    display: flex;
+}
+
+.etch-pixel {
+    height: 45px;
+    width: 45px;
+}
+
+.etch-pixel-row:first-of-type .etch-pixel:first-of-type {
+    border-radius: 25px 0 0 0;
+}
+
+.etch-pixel-row:first-of-type .etch-pixel:last-of-type {
+    border-radius: 0 25px 0 0;
+}
+
+.etch-pixel-row:last-of-type .etch-pixel:last-of-type {
+    border-radius: 0 0 25px 0;
+}
+
+.etch-pixel-row:last-of-type .etch-pixel:first-of-type {
+    border-radius: 0 0 0 25px;
+}
+
+
+
