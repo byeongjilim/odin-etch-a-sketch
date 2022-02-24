@@ -14,6 +14,10 @@
 
     <div id="toolbar">
         <button onclick="reset()">Reset</button>
+        <form onsubmit="event.preventDefault(); setNew();">
+            <input type="number" placeholder="Rows" id="row" value="16" />
+            <button>Set</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
